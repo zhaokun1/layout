@@ -1,0 +1,509 @@
+/* 整体 */
+.container {
+    width: 100%;
+    border: 1px solid #000;
+}
+/* 导航栏 */
+header .nav {
+    width: 100%;
+    height: 50px;
+    background-color: rgb(51, 51, 51);
+    line-height: 50px;
+    color:rgb(204, 204, 204);
+    font-size: 12px; 
+    position: relative;
+}
+/* 导航栏左侧滚动 */
+header .nav .navleft {
+    margin-left: 73px;
+    position: relative;
+    overflow: hidden;
+    width: 220px;
+    height: 50px;
+    /* border: 1px solid red; */
+}
+header .nav .navleft .contro {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    /* background-color: green; */
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+header .nav .navleft .contro .controls:hover {
+    color: white;
+}
+/* header .nav .navleft .contro div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+} */
+/* header .nav .contro div:first-child {
+    display: block;
+} */
+/* 导航栏右侧文字 */
+header .nav ul {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-right: 135px;  
+}
+header .nav li {
+    float:right;    
+}
+header .nav a {
+    font-size: 12px;
+    color:rgb(204, 204, 204);  
+}
+header .nav a:hover {
+    color: white;
+}
+/* 导航栏手机 */
+header .nav .phone {
+    position: absolute;
+    right: 0;
+    top: 0;
+    float: right;
+    margin-right: 87px;
+}
+/* 导航栏二维码 */
+header.nav .mask {
+    width: 300px;
+    height: 300px;
+    position: relative;
+    z-index: 1;
+} 
+.mask::after {
+    content: '';
+    width: 200px;
+    height: 200px;
+    display: block;
+    position: absolute;
+    top: -250px;
+    right: 92px;
+    transition: all 1s;
+}
+.mask:hover::after {
+    background-image: url('./imgs/二维码.jpg');
+    top: 50px;
+}
+/* 轮播图 */
+.banner  {
+    width: 1200px;
+    height: 530px;
+    /* border: 1px solid #000; */
+    margin: 0 auto;
+}
+/* 轮播图上类别 */
+.banner .bannerTop {
+    width: 100%;
+    height: 100px;
+    /* border: 1px solid #000; */
+    line-height: 100px;
+}
+/* logo */
+.banner .bannerTop .logo {
+    width: 205px;
+    height: 100%;
+    /* border: 1px solid #000; */
+    box-sizing: border-box;
+    float: left;
+}
+/* 图片 */
+.banner .bannerTop .logo .img {
+    float: left;
+    width: 66px;
+    height: 60px;
+    /* border: 1px solid #000; */
+    box-sizing: border-box;
+    margin: 14px 0px 27px 0px;
+    background-color: #1ABC9C;
+}
+.banner .bannerTop .logo .img img {
+    width: 40px;
+    height: 40px;
+    margin: 12px;
+}
+/* 标题 */
+.banner .bannerTop .logo .content {
+    position: relative;
+    width: 135px;
+    height: 60px;
+    float: right;
+    /* border: 1px solid #000; */
+    box-sizing: border-box;
+    margin: 14px 0px 27px 0px;
+ 
+}
+.banner .bannerTop .logo .content h1{
+    position: absolute;
+    top: -32px;
+    left: 0;
+    font-size: 28px;
+    font-weight: bold;
+    color: #999999
+}
+.banner .bannerTop .logo .content span {
+    position: absolute;
+    font-size: 14px;
+    color: #BEBEBE;
+}
+/* 类别 */
+.banner .bannerTop .category {
+    position: relative;
+    width: 600px;
+    height: 63px;
+    /* border: 1px solid red; */
+    box-sizing: border-box;
+    float: left;
+    margin: 14px 0px 27px 0px;
+}
+/* 清除浮动 */
+.banner .bannerTop .category::after {
+    display: block;
+    content: '';
+    visibility: hidden;
+    height: 0px;
+    clear: both;
+}
+
+.banner .bannerTop .category li a{
+    height: 63px;
+    float: left;
+    color: #666666;
+    margin-right: 24px;
+    /* border: 1px solid blue; */
+    box-sizing: border-box;
+    font-weight: bold;
+}
+/* 清除浮动 */
+.banner .bannerTop .category li a::after {
+    display: block;
+    content: '';
+    visibility: hidden;
+    height: 0px;
+    clear: both;
+}
+
+.banner .bannerTop .category li a:hover {
+    color: #1ABC9C;
+    border-bottom: 3px solid #1ABC9C;
+}
+
+/* 搜索 */
+.banner .bannerTop .sel {
+    width: 250px;
+    height: 100px;
+    float: left;
+    /* border: 1px solid #000; */
+    box-sizing: border-box;
+    position: relative;
+}
+.banner .bannerTop .sel input {
+    position: absolute;
+    width: 230px;
+    height: 30px;
+    border: 1px solid  #666666;
+    top: 50%;
+    margin-top: -8px;
+    border-radius: 10px;
+}
+.banner .bannerTop .sel span {
+    width: 20px;
+    height: 20px;
+    /* border: 1px solid #000; */
+    position: absolute;
+    top: 50%;
+    margin-top: -6px;
+    right: 30px;
+    color: #666666;
+}
+/* 购物车 */
+.banner .bannerTop .cart {
+    position: relative;
+    width: 136px;
+    height: 100%;
+    float: left;
+    /* border: 1px solid #000; */
+    box-sizing: border-box;
+    color: #666666;
+
+}
+.banner .bannerTop .cart img {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    color: #666666;
+    top: 50%;
+    margin-top: -4px;
+}
+.banner .bannerTop .cart span {
+    position: absolute;
+    left: 25px;
+    top: 7px;
+}
+.banner .bannerMiddle {
+    width: 1200px;
+    height: 430px;
+    /* border: 1px solid #000; */
+    position: relative;
+}
+/* banner 左侧 */
+.banner .bannerMiddle .left{
+    position: absolute;
+    left: 0;
+    width: 230px;
+    height: 430px;
+    /* border: 1px solid #000; */
+    box-sizing: border-box;
+    background-color: #595959;
+}
+/* banner 左侧 整体布局 */
+.banner .bannerMiddle .left div {
+    width: 100%;
+    height: 42px;
+    /* border: 1px solid #000; */
+    box-sizing: border-box;
+    line-height: 42px;
+    position: relative;
+} 
+.banner .bannerMiddle .left div:first-child {
+    margin-top: 10px;
+}
+/* banner title大字 */
+.banner .bannerMiddle .left #title {
+    width: 170px;
+    height: 100%;
+    margin-left: 20px;
+    color: #FFF;
+    font-size: 14px;
+}
+/* banner 小字 */
+.banner .bannerMiddle .left #title span {
+    margin-right: 10px;
+    color: #CCC;
+    font-size: 12px;
+}
+/* banner > */
+.banner .bannerMiddle .left #title span:last-child {
+    position: absolute;
+    right: 20px;
+    margin-right: 0;
+    color: #CCC;
+    font-size: 18px;
+    font-weight: bold;
+}
+.banner .bannerMiddle .left div:hover {
+    background-color: #1ABC9C;
+}
+/* banner 右侧轮播图 */
+.banner .bannerMiddle .right {
+    position: absolute;
+    right: 0;
+    width: 970px;
+    height: 430px;
+    /* border: 1px solid #000; */
+    box-sizing: border-box;
+    background-color: #F2F2F2;
+    overflow: hidden;
+    
+} 
+/* 三位置法 */
+.banner .bannerMiddle .right .unit li {
+    position: absolute;
+    left: 970px;
+    top: 0;
+}
+.banner .bannerMiddle .right .unit li:first-child {
+    left: 0;
+}
+/* 字母 */
+.banner .bannerMiddle .right .unit li .contro1,.contro2,.contro3 {
+    position: absolute;
+    font-size: 36px;
+    color: #999;;
+    font-weight: bolder;
+    top: 100px;
+    left: 132px;
+}
+/* 介绍1 */
+.banner .bannerMiddle .right .unit li .contro2 {
+    position: absolute;
+    top: 145px;
+    font-size: 36px;
+}
+/* 介绍2 */
+.banner .bannerMiddle .right .unit li .contro3 {
+    font-size: 24px;
+    top: 200px;
+}
+/* 按钮 */
+.banner .bannerMiddle .right .unit li .btn {
+    position: absolute;
+    width: 200px;
+    height: 48px;
+    background-color: #F04844;
+    top: 254px;
+    left: 132px;
+    line-height: 48px;
+    border-radius: 10px;
+    border: 0px solid #000;
+}
+/* 按钮 立即购买 */
+.banner .bannerMiddle .right .unit li .btn span:first-child {
+    font-size: 18px;
+    text-align: center;
+    color: white;
+}
+/* 按钮 > */
+.banner .bannerMiddle .right .unit li .btn span:last-child {
+    position: absolute;
+    top: 13px;
+    left: 137px;
+    display: block;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    /* border: 1px solid #000; */
+    border-radius: 50%;
+    background-color: #fff;
+    font-size: 20px;
+    margin-left: 10px;
+    color: #F04844;
+    font-weight: bold;
+} 
+/* 图片 */
+.banner .bannerMiddle .right .unit li img {
+    margin-left: 525px;
+}
+/* button */
+.banner .bannerMiddle .right .btns a {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    /* border: 1px solid #000; */
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;  
+    background-color: gray;
+    color: white;
+    font-size: 20px;
+    top: 50%;
+    margin-top: -25px;
+    font-weight: bold;
+    display: none;
+}
+/* 左按钮 */
+.banner .bannerMiddle .right .btns a:first-child {
+    left: 30px;
+}
+/* 右按钮 */
+.banner .bannerMiddle .right .btns a:last-child {
+    right: 30px;
+}
+/* 鼠标移入两侧按钮出现 */
+.banner .bannerMiddle .right:hover .btns a {
+    display: block;
+}
+
+/* 小圆点 */
+.banner .bannerMiddle .right .cirs {
+    width: 130px;
+    height: 20px;
+    position: absolute;
+    /* background-color: red; */
+    bottom: 50px;
+    left: 50%;
+    margin-left: -55px;
+}
+.banner .bannerMiddle .right .cirs li {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #ccc;
+    float: left;
+    margin-right: 10px;
+}
+.banner .bannerMiddle .right .cirs li:first-child {
+    background-color: #fff;
+}
+/* 品牌制作商 整体布局*/
+.facture {
+    width: 1200px;
+    height: 340px;
+    /* border: 1px solid #000; */
+    margin: 0 auto;
+}
+.facture .t {
+    width: 1200px;
+    height: 86px;
+    /* border: 1px solid #000; */
+    line-height: 86px;
+}
+/* 品牌制作商 */
+.facture .t .head {
+    font-size: 18px;
+    font-weight: bold;
+    color: #666;
+}
+/* 小字介绍 */
+.facture .t .contro {
+    font-size: 12px;
+    color: #666;
+    margin-left: 2px;
+}
+/* 查看全部 */
+.facture .t .more {
+    font-size: 14px;
+    color: #686868;
+    margin-left: 855px;
+}
+.facture .t .gt {
+    font-size: 14px;
+    color: #686868;
+    font-weight: bold;
+    margin-left: 5px;
+}
+/* 品牌制作商 中间图文 */
+.facture .box {
+    width: 100%;
+    height: 254px;
+    /* border: 1px solid red; */
+}
+.facture .box .square {
+    width: 285px;
+    height: 253px;
+    float: left;
+    background-color: #F2F2F2;
+    margin-right: 20px;
+    text-align: center;
+    color: #656565;
+}
+.facture .box .square:last-child {
+    margin-right: 0px;
+}
+/* 第一行字 */
+.facture .box .square .title {
+    margin-top: 48px;
+}
+/* 第二行字 价格 */
+.facture .box .square .price {
+    margin-top: 10px;
+}
+/* 第三行字 图片 */
+.facture .box .square .img img{
+    margin-top: 35px;
+}
+/* 上新 */
+.facture .box .square .new {
+    width: 45px;
+    height: 25px;
+    background-color: #F19736;
+    color: white;
+}
+
+
+
