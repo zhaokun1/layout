@@ -192,4 +192,94 @@ function demo() {
         change();
 }
 
+// 服装第一部分
+// 获得鼠标移入的是哪个mask 
+// 获得所有的蒙版
+var $mask = $('.cloth .box .square .mask');
+// 鼠标移入.mask显示
+$('.cloth .box .square').mouseenter(function() {
+    // 获得当前索引
+    var index = $(this).index() - 1;
+    $mask.eq(index).slideDown(70);
+    // if(index = -1) {
+    //     return;
+    // }else {
+    //     $mask.eq(index).slideDown(70); 
+    // }
+});
+// 鼠标移出.mask隐藏
+$('.cloth .box .square').mouseleave(function() {
+    $mask.slideUp(70);
+});
 
+// 服装第二部分
+var $mask1 = $('.cloth1 .box .square .mask');
+// 鼠标移入.mask显示
+$('.cloth1 .box .square').mouseenter(function() {
+    // 获得当前索引
+    var index = $(this).index() - 1;
+    $mask1.eq(index).slideDown(70);  
+});
+// 鼠标移出.mask隐藏
+$('.cloth1 .box .square').mouseleave(function() {
+    $mask1.slideUp(70);
+});
+
+
+// 餐厨1
+var $mask2 = $('.kicthen .box .square .mask');
+$('.kicthen .box .square').mouseenter(function() {
+    var index = $(this).index() - 1;
+    $mask2.eq(index).slideDown(70);
+});
+$('.kicthen .box .square').mouseleave(function() {
+    $mask2.slideUp(70);
+});
+// 餐厨2
+var $mask3 = $('.kicthen1 .box .square .mask');
+// 鼠标移入.mask显示
+$('.kicthen1 .box .square').mouseenter(function() {
+    var index = $(this).index() - 1;
+    $mask3.eq(index).slideDown(70);  
+});
+$('.kicthen1 .box .square').mouseleave(function() {
+    $mask3.slideUp(70);
+});
+
+// 配件1
+var $mask4 = $('.parts .box .square .mask');
+$('.parts .box .square').mouseenter(function() {
+    var index = $(this).index() - 1;
+    $mask4.eq(index).slideDown(70);
+});
+$('.parts .box .square').mouseleave(function() {
+    $mask4.slideUp(70);
+});
+// 配件2
+var $mask5 = $('.parts1 .box .square .mask');
+$('.parts1 .box .square').mouseenter(function() {
+    var index = $(this).index() - 1;
+    $mask5.eq(index).slideDown(70);
+});
+$('.parts1 .box .square').mouseleave(function() {
+    $mask5.slideUp(70);
+});
+// 居家1
+var $mask6 = $('.home .box .square .mask');
+$('.home .box .square').mouseenter(function() {
+    var index = $(this).index() - 1;
+    $mask6.eq(index).slideDown(70);
+});
+$('.home .box .square').mouseleave(function() {
+    $mask6.slideUp(70);
+});
+// 居家2
+var $mask7 = $('.home1 .box .square .mask');
+$('.home1 .box .square').mouseenter(function() {
+    // 获得当前索引
+    var index = $(this).index() - 1;
+    $mask7.eq(index).slideDown(70);
+});
+$('.home1 .box .square').mouseleave(function() {
+    $mask7.slideUp(70);
+});

@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?tw1pxh');
-  src:  url('fonts/icomoon.eot?tw1pxh#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?tw1pxh') format('truetype'),
-    url('fonts/icomoon.woff?tw1pxh') format('woff'),
-    url('fonts/icomoon.svg?tw1pxh#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?ofj0q5');
+  src:  url('fonts/icomoon.eot?ofj0q5#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?ofj0q5') format('truetype'),
+    url('fonts/icomoon.woff?ofj0q5') format('woff'),
+    url('fonts/icomoon.svg?ofj0q5#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -28,6 +28,18 @@
 .icon-bullhorn:before {
   content: "\e91a";
 }
+.icon-bubbles2:before {
+  content: "\e96d";
+}
 .icon-search:before {
   content: "\e986";
+}
+.icon-sina-weibo:before {
+  content: "\ea9a";
+}
+.icon-twitch:before {
+  content: "\ea9f";
+}
+.icon-stumbleupon2:before {
+  content: "\eacf";
 }

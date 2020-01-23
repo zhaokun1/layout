@@ -499,11 +499,1726 @@ header.nav .mask {
 }
 /* 上新 */
 .facture .box .square .new {
+    position: relative;
+    display: block;
     width: 45px;
     height: 25px;
     background-color: #F19736;
     color: white;
+    border-radius: 20px 30px 30px 0px;
+    font-size: 14px;
+    text-align: center;
+    line-height: 25px;
+    top: -215px;
+    left: 230px;
 }
+/* 推荐专区 */
+.recommed {
+    width: 1200px;
+    height: 340px;
+    /* border: 1px solid #000; */
+    margin: 0 auto;
+}
+.recommed .t {
+    width: 1200px;
+    height: 86px;
+    /* border: 1px solid #000; */
+    line-height: 86px;
+}
+/* 推荐专区 */
+.recommed .t .head {
+    font-size: 18px;
+    font-weight: bold;
+    color: #666;
+}
+/* 推荐专区 中间图文 */
+.recommed .box {
+    width: 100%;
+    height: 254px;
+    /* border: 1px solid red; */
+}
+.recommed .box .square {
+    width: 285px;
+    height: 253px;
+    float: left;
+    background-color: #F2F2F2;
+    margin-right: 20px;
+    text-align: center;
+    color: #656565;
+}
+.recommed .box .square:last-child {
+    margin-right: 0px;
+}
+/* 第一行字 */
+.recommed .box .square .title {
+    margin-top: 48px;
+}
+/* 第二行字 价格 */
+.recommed .box .square .price {
+    margin-top: 10px;
+}
+/* 第三行字 图片 */
+.recommed .box .square .img img{
+    margin-top: 35px;
+}
+/* 秒杀专区 */
+.seckill {
+    width: 1200px;
+    height: 400px;
+    /* border: 1px solid #000; */
+    margin: 0 auto;
+}
+
+.seckill .t {
+    width: 1200px;
+    height: 86px;
+    /* border: 1px solid #000; */
+    line-height: 86px;
+}
+/* 秒杀专区 */
+.seckill .t .head {
+    font-size: 18px;
+    font-weight: bold;
+    color: #666;
+}
+/* 小字介绍 */
+.seckill .t .contro {
+    font-size: 12px;
+    color: #666;
+    margin-left: 2px;
+}
+/* 查看全部 */
+.seckill .t .more {
+    font-size: 14px;
+    color: #686868;
+    margin-left: 930px;
+}
+.seckill .t .gt {
+    font-size: 14px;
+    color: #686868;
+    font-weight: bold;
+    margin-left: 5px;
+}
+/* 秒杀专区 中间图文 */
+.seckill .box {
+    width: 100%;
+    height: 254px;
+    /* border: 1px solid red; */
+}
+.seckill .box .square {
+    width: 228px;
+    height: 300px;
+    float: left;
+    background-color: #F2F2F2;
+    margin-right: 15px;
+    text-align: center;
+    color: #656565;
+    text-align: center;
+}
+.seckill .box div:first-child {
+    background-color: #E4E4E4;
+}
+.seckill .box .square:last-child {
+    margin-right: 0px;
+}
+/* 第一张图片 */
+.seckill .box .square .time {
+    font-size: 28px;
+    margin-top: 46px;
+    
+}
+/* 剩余时间 */
+.seckill .box .square .endtime {
+    font-size: 14px;
+    margin-top: 15px;
+    color: #999;
+}
+
+/* 倒计时 */
+.seckill .box .square .endtime1 {
+    width: 43px;
+    height: 30px;
+    background-color: #666;
+    float: left;
+    margin: 12px 0px 0px 15px;
+    text-align: center;
+    line-height: 30px;
+}
+.seckill .box .square p:nth-child(3) {
+    margin-left: 35px;
+}
+.seckill .box .square p span{
+    color: #fff;
+}
+.seckill .box .square .endtime1 .point {
+    position: relative;
+    left: 15px;
+    color: #999;
+}
+/* 清除浮动 */
+.seckill .box .square .endtime1:after {
+    display: block;
+    content: '';
+    visibility: hidden;
+    height: 0;
+    clear: both;
+}
+/* 下一场 */
+.seckill .box .square .nexttime {
+    margin-top: 72px;
+}
+/* 查看全部 */
+.seckill .box .square button {
+    /* display: block; */
+    margin-top: 17px;
+    width: 152px;
+    height: 33px;
+    background-color: #F04845;
+    border-radius: 20px;
+    color: white;
+    border: 0px solid #000;
+    text-align: center;
+    line-height: 33px;
+}
+.seckill .box .square button span:last-child {
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border-radius: 50%;
+    color: #F04845;
+    font-weight: bold;
+    position: relative;
+    top: -27px;
+    left: 113px;
+    text-align: center;
+    line-height: 20px;
+}
+/* 第二张图片 图片 */
+.seckill .box .square .img img {
+    margin-top: 52px;
+}
+/* 仅剩100件 */
+.seckill .box .square .num {
+    width: 116px;
+    height: 22px;
+    margin-top: 38px;
+    border: 1px solid red;
+    font-size: 12px;
+    border-radius: 20px;
+    text-align: center;
+    line-height: 22px;
+    margin-left: 58px;
+}
+.seckill .box .square .num span {
+    display: block;
+    width: 100px;
+    height: 22px;
+    color: #F04845;
+    background-color: #FCDAD9;
+    border-radius: 20px 0px 0px 20px;
+}
+.seckill .box .square .title1 {
+    margin-top: 15px;
+    font-size: 14px;
+}
+.seckill .box .square .title2 {
+    margin-top: 10px;
+    font-size: 12px;
+}
+/* 新价格 */
+.seckill .box .square .newprice {
+    margin-top: 12px;
+    color: red;
+    font-size: 14px;
+}
+/* 价格 */
+.seckill .box .square .price {
+    width: 40px;
+    height: 40px;
+    background-color: #F04845;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 12px;
+    text-decoration: line-through;
+    position: relative;
+    top: -295px;
+    left: 180px;
+}
+/* 新鲜好物 */
+.fresh {
+    width: 1200px;
+    height: 400px;
+    /* border: 1px solid #000; */
+    margin: 0 auto;
+}
+.fresh .t {
+    width: 1200px;
+    height: 86px;
+    /* border: 1px solid #000; */
+    line-height: 86px;
+}
+/* 秒杀专区 */
+.fresh .t .head {
+    font-size: 18px;
+    font-weight: bold;
+    color: #666;
+}
+/* 小字介绍 */
+.fresh .t .contro {
+    font-size: 12px;
+    color: #666;
+    margin-left: 2px;
+}
+/* 按钮 < */
+.fresh .t .lt {
+    width: 40px;
+    height: 25px;
+    border: 1px solid #666;
+    text-align: center;
+    line-height: 25px;
+    color: #989898;
+    font-weight: bold;
+    margin-left: 920px;
+}
+.fresh .t .gt {
+    width: 40px;
+    height: 25px;
+    border: 1px solid #666;
+    text-align: center;
+    line-height: 25px;
+    color: #989898;
+    font-weight: bold;
+}
+/* 新鲜好物 中间图文 */
+.fresh .box {
+    width: 100%;
+    height: 254px;
+    /* border: 1px solid red; */
+}
+.fresh .box .square {
+    width: 228px;
+    height: 300px;
+    float: left;
+    background-color: #F2F2F2;
+    margin-right: 15px;
+    text-align: center;
+    color: #656565;
+    text-align: center;
+}
+.fresh .box .square:last-child {
+    margin-right: 0px;
+}
+/* square 里面各部分布局*/
+.fresh .box .square .img img {
+    margin-top: 54px;
+}
+.fresh .box .square .title1 {
+    margin-top: 50px;
+    font-size: 14px;
+}
+.fresh .box .square .title2 {
+    margin-top: 10px;
+    font-size: 12px;
+}
+.fresh .box .square .price {
+    margin-top: 15px;
+    color: #E64D4F;
+    font-size: 14px;
+}
+.fresh .box .square .new {
+    display: block;
+    width: 50px;
+    height: 22px;
+    background-color: #E59A25;
+    color: #fff;
+    font-size: 14px;
+    position: relative;
+    top: -280px;
+    left: 90px;
+
+}
+/* 服装 */
+.cloth {
+    width: 1200px;
+    height: 400px;
+    /* border: 1px solid #000; */
+    margin: 0 auto;
+}
+.cloth .t {
+    width: 1200px;
+    height: 86px;
+    /* border: 1px solid #000; */
+    line-height: 86px;
+}
+.cloth .t .head {
+    font-size: 18px;
+    font-weight: bold;
+    color: #666;
+}
+.cloth .t .cloths {
+    margin-left: 740px;
+    font-size: 14px;
+    color: #666;
+}
+/* 查看全部 */
+.cloth .t .more {
+    font-size: 14px;
+    color: #686868;
+    margin-left: 10px;
+    border: 0px solid #000;
+}
+/* > */
+.cloth .t .gt {
+    font-size: 14px;
+    color: #686868;
+    font-weight: bold;
+    margin-left: 5px;
+    border: 0px solid #000;
+}
+/* 服装 中间图文 */
+.cloth .box {
+    width: 100%;
+    height: 254px;
+    /* border: 1px solid red; */
+}
+.cloth .box .square {
+    width: 228px;
+    height: 300px;
+    float: left;
+    background-color: #F2F2F2;
+    margin-right: 15px;
+    text-align: center;
+    color: #656565;
+    text-align: center;
+}
+.cloth .box .square:last-child {
+    margin-right: 0px;
+}
+/* square 里面第一部分部分布局*/
+.cloth .box .square .img1 img {
+    margin-top: 0px;
+}
+.cloth .box .square .title11 {
+    margin-top: 50px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.cloth .box .square .title12 {
+    margin-top: 10px;
+    font-size: 14px;
+}
+/* 立减200元 */
+.cloth .box .square .price1 {
+    width: 55px;
+    height: 55px;
+    background-color: #F04845;
+    border-radius: 50%;
+    text-align: center;
+    /* line-height: 60px; */
+    font-size: 14px;
+    color: white;
+    position: relative;
+    top: 30px;
+    left: 140px;
+}
+/* square 里面第二部分部分布局*/
+.cloth .box .square .img img {
+    margin-top: 54px;
+}
+.cloth .box .square .title1 {
+    margin-top: 50px;
+    font-size: 14px;
+}
+.cloth .box .square .title2 {
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+.cloth .box .square .price {
+    color: #E64D4F;
+    font-size: 14px;
+}
+/* 享9折 */
+.cloth .box .square .discount {
+    width: 50px;
+    height: 20px;
+    display: block;
+    width: 50px;
+    height: 22px;
+    background-color: #E64D4F;
+    color: #fff;
+    font-size: 14px;
+    position: relative;
+    top: -280px;
+    left: 90px;
+    margin-top: 20px;
+}
+/* 蒙版 */
+.cloth .box .square .mask {
+    width: 228px;
+    height: 70px;
+    background-color: #E36944;
+    text-align: left;
+    font-size: 12px;
+    color: #fff;
+    padding: 10px 25px 20px 20px;
+    box-sizing: border-box;
+    margin-top: -70px;
+    display: none;
+}
+.cloth .box .square .mask .evaluate {
+    color: #FECD66;
+    padding-top: 5px;
+}
+/* 服装第二部分 */
+.cloth1 {
+    width: 1200px;
+    height: 400px;
+    /* border: 1px solid #000; */
+    margin: 0 auto;
+}
+/* 服装 中间图文 */
+.cloth1 .box {
+    width: 100%;
+    height: 254px;
+    /* border: 1px solid red; */
+}
+.cloth1 .box .square {
+    width: 228px;
+    height: 300px;
+    float: left;
+    background-color: #F2F2F2;
+    margin-right: 15px;
+    text-align: center;
+    color: #656565;
+    text-align: center;
+}
+.cloth1 .box .square:last-child {
+    margin-right: 0px;
+}
+/* square 里面第一部分部分布局*/
+.cloth1 .box .square .title11 {
+    margin-top: 50px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.cloth1 .box .square .title12 {
+    margin-top: 10px;
+    font-size: 14px;
+}
+/* 249 */
+.cloth1 .box .square .price1 {
+    width: 55px;
+    height: 55px;
+    text-align: center;
+    font-size: 28px;
+    color: #F04845;
+    margin-top: 20px;
+    margin-left: 63px;
+    font-weight: bold;
+    letter-spacing: 0px;
+}
+.cloth1 .box .square button {
+    margin-top: 30px;
+    width: 150px;
+    height: 30px;
+    background-color: #F04845;
+    border: 0px solid #000;
+    color: #fff;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 20px;
+}
+.cloth1 .box .square button span:last-child {
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    color: #F04845;
+    border-radius: 50%;
+    font-weight: bold;
+    position: relative;
+    top: -25px;
+    left: 115px;
+    text-align: center;
+    line-height: 20px;
+}
+/* square 里面第二部分部分布局*/
+.cloth1 .box .square .img img {
+    margin-top: 54px;
+}
+.cloth1 .box .square .title1 {
+    margin-top: 50px;
+    font-size: 14px;
+}
+.cloth1 .box .square .title2 {
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+.cloth1 .box .square .price {
+    color: #E64D4F;
+    font-size: 14px;
+}
+/* 享9折 */
+.cloth1 .box .square .discount {
+    width: 50px;
+    height: 20px;
+    display: block;
+    width: 50px;
+    height: 22px;
+    background-color: #E64D4F;
+    color: #fff;
+    font-size: 14px;
+    position: relative;
+    top: -280px;
+    left: 90px;
+    margin-top: 20px;
+}
+/* 蒙版 */
+.cloth1 .box .square .mask {
+    width: 228px;
+    height: 70px;
+    background-color: #E36944;
+    text-align: left;
+    font-size: 12px;
+    color: #fff;
+    padding: 10px 25px 20px 20px;
+    box-sizing: border-box;
+    margin-top: -70px;
+    display: none;
+}
+.cloth1 .box .square .mask .evaluate {
+    color: #FECD66;
+    padding-top: 5px;
+}
+/* 餐厨 */
+.kicthen {
+    width: 1200px;
+    height: 400px;
+    /* border: 1px solid #000; */
+    margin: 0 auto;
+}
+.kicthen .t {
+    width: 1200px;
+    height: 86px;
+    /* border: 1px solid #000; */
+    line-height: 86px;
+}
+.kicthen .t .head {
+    font-size: 18px;
+    font-weight: bold;
+    color: #666;
+}
+.kicthen .t .kicthens {
+    margin-left: 640px;
+    font-size: 14px;
+    color: #666;
+}
+/* 查看全部 */
+.kicthen .t .more {
+    font-size: 14px;
+    color: #686868;
+    margin-left: 10px;
+    border: 0px solid #000;
+}
+/* > */
+.kicthen .t .gt {
+    font-size: 14px;
+    color: #686868;
+    font-weight: bold;
+    margin-left: 5px;
+    border: 0px solid #000;
+}
+/* 餐厨 中间图文 */
+.kicthen .box {
+    width: 100%;
+    height: 254px;
+    /* border: 1px solid red; */
+}
+.kicthen .box .square {
+    width: 228px;
+    height: 300px;
+    float: left;
+    background-color: #F2F2F2;
+    margin-right: 15px;
+    text-align: center;
+    color: #656565;
+    text-align: center;
+}
+.kicthen .box .square:last-child {
+    margin-right: 0px;
+}
+/* square 里面第一部分部分布局*/
+.kicthen .box .square .img1 img {
+    margin-top: 0px;
+}
+.kicthen .box .square .title11 {
+    margin-top: 50px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.kicthen .box .square .title12 {
+    margin-top: 10px;
+    font-size: 14px;
+}
+/* 立减200元 */
+.kicthen .box .square .price1 {
+    width: 55px;
+    height: 55px;
+    background-color: #F04845;
+    border-radius: 50%;
+    text-align: center;
+    /* line-height: 60px; */
+    font-size: 14px;
+    color: white;
+    position: relative;
+    top: 30px;
+    left: 140px;
+}
+/* square 里面第二部分部分布局*/
+.kicthen .box .square .img img {
+    margin-top: 54px;
+}
+.kicthen .box .square .title1 {
+    margin-top: 50px;
+    font-size: 14px;
+}
+.kicthen .box .square .title2 {
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+.kicthen .box .square .price {
+    color: #E64D4F;
+    font-size: 14px;
+}
+/* 享9折 */
+.kicthen .box .square .discount {
+    width: 50px;
+    height: 20px;
+    display: block;
+    width: 50px;
+    height: 22px;
+    background-color: #E64D4F;
+    color: #fff;
+    font-size: 14px;
+    position: relative;
+    top: -280px;
+    left: 90px;
+    margin-top: 20px;
+}
+/* 蒙版 */
+.kicthen .box .square .mask {
+    width: 228px;
+    height: 70px;
+    background-color: #E36944;
+    text-align: left;
+    font-size: 12px;
+    color: #fff;
+    padding: 10px 25px 20px 20px;
+    box-sizing: border-box;
+    margin-top: -70px;
+    display: none;
+}
+.kicthen .box .square .mask .evaluate {
+    color: #FECD66;
+    padding-top: 5px;
+}
+/* 餐厨第二部分 */
+.kicthen1 {
+    width: 1200px;
+    height: 400px;
+    /* border: 1px solid #000; */
+    margin: 0 auto;
+}
+/* 餐厨 中间图文 */
+.kicthen1 .box {
+    width: 100%;
+    height: 254px;
+    /* border: 1px solid red; */
+}
+.kicthen1 .box .square {
+    width: 228px;
+    height: 300px;
+    float: left;
+    background-color: #F2F2F2;
+    margin-right: 15px;
+    text-align: center;
+    color: #656565;
+    text-align: center;
+}
+.kicthen1 .box .square:last-child {
+    margin-right: 0px;
+}
+/* square 里面第一部分部分布局*/
+.kicthen1 .box .square .title11 {
+    margin-top: 50px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.kicthen1 .box .square .title12 {
+    margin-top: 10px;
+    font-size: 14px;
+}
+/* 249 */
+.kicthen1 .box .square .price1 {
+    width: 55px;
+    height: 55px;
+    text-align: center;
+    font-size: 28px;
+    color: #F04845;
+    margin-top: 20px;
+    margin-left: 63px;
+    font-weight: bold;
+    letter-spacing: 0px;
+}
+.kicthen1 .box .square button {
+    margin-top: 30px;
+    width: 150px;
+    height: 30px;
+    background-color: #F04845;
+    border: 0px solid #000;
+    color: #fff;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 20px;
+}
+.kicthen1 .box .square button span:last-child {
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    color: #F04845;
+    border-radius: 50%;
+    font-weight: bold;
+    position: relative;
+    top: -25px;
+    left: 115px;
+    text-align: center;
+    line-height: 20px;
+}
+/* square 里面第二部分部分布局*/
+.kicthen1 .box .square .img img {
+    margin-top: 54px;
+}
+.kicthen1 .box .square .title1 {
+    margin-top: 50px;
+    font-size: 14px;
+}
+.kicthen1 .box .square .title2 {
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+.kicthen1 .box .square .price {
+    color: #E64D4F;
+    font-size: 14px;
+}
+/* 享9折 */
+.kicthen1 .box .square .discount {
+    width: 50px;
+    height: 20px;
+    display: block;
+    width: 50px;
+    height: 22px;
+    background-color: #E64D4F;
+    color: #fff;
+    font-size: 14px;
+    position: relative;
+    top: -280px;
+    left: 90px;
+    margin-top: 20px;
+}
+/* 蒙版 */
+.kicthen1 .box .square .mask {
+    width: 228px;
+    height: 70px;
+    background-color: #E36944;
+    text-align: left;
+    font-size: 12px;
+    color: #fff;
+    padding: 10px 25px 20px 20px;
+    box-sizing: border-box;
+    margin-top: -70px;
+    display: none;
+}
+.kicthen1 .box .square .mask .evaluate {
+    color: #FECD66;
+    padding-top: 5px;
+}
+/* 配件 */
+.parts {
+    width: 1200px;
+    height: 400px;
+    /* border: 1px solid #000; */
+    margin: 0 auto;
+}
+.parts .t {
+    width: 1200px;
+    height: 86px;
+    /* border: 1px solid #000; */
+    line-height: 86px;
+}
+.parts .t .head {
+    font-size: 18px;
+    font-weight: bold;
+    color: #666;
+}
+.parts .t .partss {
+    margin-left: 600px;
+    font-size: 14px;
+    color: #666;
+}
+/* 查看全部 */
+.parts .t .more {
+    font-size: 14px;
+    color: #686868;
+    margin-left: 10px;
+    border: 0px solid #000;
+}
+/* > */
+.parts .t .gt {
+    font-size: 14px;
+    color: #686868;
+    font-weight: bold;
+    margin-left: 5px;
+    border: 0px solid #000;
+}
+/* 餐厨 中间图文 */
+.parts .box {
+    width: 100%;
+    height: 254px;
+    /* border: 1px solid red; */
+}
+.parts .box .square {
+    width: 228px;
+    height: 300px;
+    float: left;
+    background-color: #F2F2F2;
+    margin-right: 15px;
+    text-align: center;
+    color: #656565;
+    text-align: center;
+}
+.parts .box .square:last-child {
+    margin-right: 0px;
+}
+/* square 里面第一部分部分布局*/
+.parts .box .square .img1 img {
+    margin-top: 0px;
+}
+.parts .box .square .title11 {
+    margin-top: 50px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.parts .box .square .title12 {
+    margin-top: 10px;
+    font-size: 14px;
+}
+/* 立减200元 */
+.parts .box .square .price1 {
+    width: 55px;
+    height: 55px;
+    background-color: #F04845;
+    border-radius: 50%;
+    text-align: center;
+    /* line-height: 60px; */
+    font-size: 14px;
+    color: white;
+    position: relative;
+    top: 30px;
+    left: 140px;
+}
+/* square 里面第二部分部分布局*/
+.parts .box .square .img img {
+    margin-top: 54px;
+}
+.parts .box .square .title1 {
+    margin-top: 50px;
+    font-size: 14px;
+}
+.parts .box .square .title2 {
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+.parts .box .square .price {
+    color: #E64D4F;
+    font-size: 14px;
+}
+/* 享9折 */
+.parts .box .square .discount {
+    width: 50px;
+    height: 20px;
+    display: block;
+    width: 50px;
+    height: 22px;
+    background-color: #E64D4F;
+    color: #fff;
+    font-size: 14px;
+    position: relative;
+    top: -280px;
+    left: 90px;
+    margin-top: 20px;
+}
+/* 蒙版 */
+.parts .box .square .mask {
+    width: 228px;
+    height: 70px;
+    background-color: #E36944;
+    text-align: left;
+    font-size: 12px;
+    color: #fff;
+    padding: 10px 25px 20px 20px;
+    box-sizing: border-box;
+    margin-top: -70px;
+    display: none;
+}
+.parts .box .square .mask .evaluate {
+    color: #FECD66;
+    padding-top: 5px;
+}
+/* 餐厨第二部分 */
+.parts1 {
+    width: 1200px;
+    height: 400px;
+    /* border: 1px solid #000; */
+    margin: 0 auto;
+}
+/* 餐厨 中间图文 */
+.parts1 .box {
+    width: 100%;
+    height: 254px;
+    /* border: 1px solid red; */
+}
+.parts1 .box .square {
+    width: 228px;
+    height: 300px;
+    float: left;
+    background-color: #F2F2F2;
+    margin-right: 15px;
+    text-align: center;
+    color: #656565;
+    text-align: center;
+}
+.parts1 .box .square:last-child {
+    margin-right: 0px;
+}
+/* square 里面第一部分部分布局*/
+.parts1 .box .square .title11 {
+    margin-top: 50px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.parts1 .box .square .title12 {
+    margin-top: 10px;
+    font-size: 14px;
+}
+/* 249 */
+.parts1 .box .square .price1 {
+    width: 55px;
+    height: 55px;
+    text-align: center;
+    font-size: 28px;
+    color: #F04845;
+    margin-top: 20px;
+    margin-left: 63px;
+    font-weight: bold;
+    letter-spacing: 0px;
+}
+.parts1 .box .square button {
+    margin-top: 30px;
+    width: 150px;
+    height: 30px;
+    background-color: #F04845;
+    border: 0px solid #000;
+    color: #fff;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 20px;
+}
+.parts1 .box .square button span:last-child {
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    color: #F04845;
+    border-radius: 50%;
+    font-weight: bold;
+    position: relative;
+    top: -25px;
+    left: 115px;
+    text-align: center;
+    line-height: 20px;
+}
+/* square 里面第二部分部分布局*/
+.parts1 .box .square .img img {
+    margin-top: 54px;
+}
+.parts1 .box .square .title1 {
+    margin-top: 50px;
+    font-size: 14px;
+}
+.parts1 .box .square .title2 {
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+.parts1 .box .square .price {
+    color: #E64D4F;
+    font-size: 14px;
+}
+/* 享9折 */
+.parts1 .box .square .discount {
+    width: 50px;
+    height: 20px;
+    display: block;
+    width: 50px;
+    height: 22px;
+    background-color: #E64D4F;
+    color: #fff;
+    font-size: 14px;
+    position: relative;
+    top: -280px;
+    left: 90px;
+    margin-top: 20px;
+}
+/* 蒙版 */
+.parts1 .box .square .mask {
+    width: 228px;
+    height: 70px;
+    background-color: #E36944;
+    text-align: left;
+    font-size: 12px;
+    color: #fff;
+    padding: 10px 25px 20px 20px;
+    box-sizing: border-box;
+    margin-top: -70px;
+    display: none;
+}
+.parts1 .box .square .mask .evaluate {
+    color: #FECD66;
+    padding-top: 5px;
+}
+/* 居家 */
+.home {
+    width: 1200px;
+    height: 400px;
+    /* border: 1px solid #000; */
+    margin: 0 auto;
+}
+.home .t {
+    width: 1200px;
+    height: 86px;
+    /* border: 1px solid #000; */
+    line-height: 86px;
+}
+.home .t .head {
+    font-size: 18px;
+    font-weight: bold;
+    color: #666;
+}
+.home .t .homes {
+    margin-left: 640px;
+    font-size: 14px;
+    color: #666;
+}
+/* 查看全部 */
+.home .t .more {
+    font-size: 14px;
+    color: #686868;
+    margin-left: 10px;
+    border: 0px solid #000;
+}
+/* > */
+.home .t .gt {
+    font-size: 14px;
+    color: #686868;
+    font-weight: bold;
+    margin-left: 5px;
+    border: 0px solid #000;
+}
+/* 餐厨 中间图文 */
+.home .box {
+    width: 100%;
+    height: 254px;
+    /* border: 1px solid red; */
+}
+.home .box .square {
+    width: 228px;
+    height: 300px;
+    float: left;
+    background-color: #F2F2F2;
+    margin-right: 15px;
+    text-align: center;
+    color: #656565;
+    text-align: center;
+}
+.home .box .square:last-child {
+    margin-right: 0px;
+}
+/* square 里面第一部分部分布局*/
+.home .box .square .img1 img {
+    margin-top: 0px;
+}
+.home .box .square .title11 {
+    margin-top: 50px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.home .box .square .title12 {
+    margin-top: 10px;
+    font-size: 14px;
+}
+/* 立减200元 */
+.home .box .square .price1 {
+    width: 55px;
+    height: 55px;
+    background-color: #F04845;
+    border-radius: 50%;
+    text-align: center;
+    /* line-height: 60px; */
+    font-size: 14px;
+    color: white;
+    position: relative;
+    top: 30px;
+    left: 140px;
+}
+/* square 里面第二部分部分布局*/
+.home .box .square .img img {
+    margin-top: 54px;
+}
+.home .box .square .title1 {
+    margin-top: 50px;
+    font-size: 14px;
+}
+.home .box .square .title2 {
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+.home .box .square .price {
+    color: #E64D4F;
+    font-size: 14px;
+}
+/* 享9折 */
+.home .box .square .discount {
+    width: 50px;
+    height: 20px;
+    display: block;
+    width: 50px;
+    height: 22px;
+    background-color: #E64D4F;
+    color: #fff;
+    font-size: 14px;
+    position: relative;
+    top: -280px;
+    left: 90px;
+    margin-top: 20px;
+}
+/* 蒙版 */
+.home .box .square .mask {
+    width: 228px;
+    height: 70px;
+    background-color: #E36944;
+    text-align: left;
+    font-size: 12px;
+    color: #fff;
+    padding: 10px 25px 20px 20px;
+    box-sizing: border-box;
+    margin-top: -70px;
+    display: none;
+}
+.home .box .square .mask .evaluate {
+    color: #FECD66;
+    padding-top: 5px;
+}
+/* 餐厨第二部分 */
+.home1 {
+    width: 1200px;
+    height: 400px;
+    /* border: 1px solid #000; */
+    margin: 0 auto;
+}
+/* 餐厨 中间图文 */
+.home1 .box {
+    width: 100%;
+    height: 254px;
+    /* border: 1px solid red; */
+}
+.home1 .box .square {
+    width: 228px;
+    height: 300px;
+    float: left;
+    background-color: #F2F2F2;
+    margin-right: 15px;
+    text-align: center;
+    color: #656565;
+    text-align: center;
+}
+.home1 .box .square:last-child {
+    margin-right: 0px;
+}
+/* square 里面第一部分部分布局*/
+.home1 .box .square .title11 {
+    margin-top: 50px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.home1 .box .square .title12 {
+    margin-top: 10px;
+    font-size: 14px;
+}
+/* 249 */
+.home1 .box .square .price1 {
+    width: 55px;
+    height: 55px;
+    text-align: center;
+    font-size: 28px;
+    color: #F04845;
+    margin-top: 20px;
+    margin-left: 63px;
+    font-weight: bold;
+    letter-spacing: 0px;
+}
+.home1 .box .square button {
+    margin-top: 30px;
+    width: 150px;
+    height: 30px;
+    background-color: #F04845;
+    border: 0px solid #000;
+    color: #fff;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 20px;
+}
+.home1 .box .square button span:last-child {
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    color: #F04845;
+    border-radius: 50%;
+    font-weight: bold;
+    position: relative;
+    top: -25px;
+    left: 115px;
+    text-align: center;
+    line-height: 20px;
+}
+/* square 里面第二部分部分布局*/
+.home1 .box .square .img img {
+    margin-top: 54px;
+}
+.home1 .box .square .title1 {
+    margin-top: 50px;
+    font-size: 14px;
+}
+.home1 .box .square .title2 {
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+.home1 .box .square .price {
+    color: #E64D4F;
+    font-size: 14px;
+}
+/* 享9折 */
+.home1 .box .square .discount {
+    width: 50px;
+    height: 20px;
+    display: block;
+    width: 50px;
+    height: 22px;
+    background-color: #E64D4F;
+    color: #fff;
+    font-size: 14px;
+    position: relative;
+    top: -280px;
+    left: 90px;
+    margin-top: 20px;
+}
+/* 蒙版 */
+.home1 .box .square .mask {
+    width: 228px;
+    height: 70px;
+    background-color: #E36944;
+    text-align: left;
+    font-size: 12px;
+    color: #fff;
+    padding: 10px 25px 20px 20px;
+    box-sizing: border-box;
+    margin-top: -70px;
+    display: none;
+}
+.home1 .box .square .mask .evaluate {
+    color: #FECD66;
+    padding-top: 5px;
+}
+/* 专题 */
+.special {
+    width: 1200px;
+    height: 410px;
+    /* border: 1px solid #000; */
+    margin: 0 auto;
+    position: relative;
+}
+
+.special .t {
+    width: 1200px;
+    height: 86px;
+    /* border: 1px solid #000; */
+    line-height: 86px;
+}
+.special .t .head {
+    font-size: 18px;
+    font-weight: bold;
+    color: #666;
+}
+
+/* 查看全部 */
+.special .t .more {
+    font-size: 14px;
+    color: #686868;
+    margin-left: 1080px;
+}
+.special .t .gt {
+    font-size: 14px;
+    color: #686868;
+    font-weight: bold;
+    margin-left: 5px;
+}
+/*  专题中间图文 */
+.special .box {
+    width: 100%;
+    height: 323px;
+    /* border: 1px solid red; */
+}
+.special .box .square {
+    width: 376px;
+    height: 323px;
+    float: left;
+    margin-right: 25px;
+    text-align: left;
+    color: #656565;
+}
+.special .box .square:last-child {
+    margin-right: 0px;
+}
+/* 图片 */
+.special .box .square .img {
+    display: block;
+    width: 100%;
+    height: 200px;
+    /* border: 1px solid #000; */
+    box-sizing: border-box;
+    background-color: #E4E4E4;
+    text-align: center;
+}
+.special .box .square .img img {
+    margin-top: 50px;
+}
+/* 第一行字 */
+.special .box .square .title1 {
+    display: block;
+    margin: 20px 0px 0px 20px;
+    color: #656565;
+}
+/* 第二行字 */
+.special .box .square .title2 {
+    display: block;
+    font-size: 14px;
+    margin: 10px 0px 0px 20px;
+    color: #CCCCCC;
+}
+/* 价格 */
+.special .box .square .price {
+    color: #F2424C;
+    font-size: 14px;
+    margin-top: -50px;
+    margin-left: 297px;
+}
+/* 收藏观看评论人数 */
+.special .box .square hr {
+    display: block;
+    margin: 40px 10px 0px 0px;
+    border: 1px solid #F2F2F2;
+}
+/* 收藏 */
+.special .box .square .base {
+    width: 100%;
+    height: 30px;
+    /* border: 1px solid #000; */
+    font-size: 12px;
+    position: relative;
+    padding: 4px 5px 5px 20px;
+    box-sizing: border-box;
+}
+/* 观看 */
+.special .box .square .base .look {
+    position: absolute;
+    left: 92px;
+}
+.special .box .square .base .look1 {
+    position: absolute;
+    left: 112px;
+}
+/* 评论 */
+.special .box .square .base .comment {
+    position: absolute;
+    right: 43px;
+}
+.special .box .square .base .comment1 {
+    position: absolute;
+    right: 20px;
+}
+/* 大家都在说 */
+.speak {
+    width: 1200px;
+    height: 430px;
+    /* border: 1px solid #000; */
+    margin: 0 auto;
+    position: relative;
+}
+
+.speak .t {
+    width: 1200px;
+    height: 86px;
+    /* border: 1px solid #000; */
+    line-height: 86px;
+}
+.speak .t .head {
+    font-size: 18px;
+    font-weight: bold;
+    color: #666;
+}
+
+/* 查看全部 */
+.speak .t .more {
+    font-size: 14px;
+    color: #686868;
+    margin-left: 1000px;
+}
+.speak .t .gt {
+    font-size: 14px;
+    color: #686868;
+    font-weight: bold;
+    margin-left: 5px;
+}
+/*  中间图文 */
+.speak .box {
+    width: 100%;
+    height: 323px;
+    /* border: 1px solid red; */
+}
+.speak .box .square {
+    width: 376px;
+    height: 323px;
+    float: left;
+    margin-right: 25px;
+    text-align: left;
+    color: #656565;
+}
+.speak .box .square:last-child {
+    margin-right: 0px;
+}
+/* 图片 */
+.speak .box .square .img {
+    display: block;
+    width: 100%;
+    height: 200px;
+    /* border: 1px solid #000; */
+    box-sizing: border-box;
+    background-color: #E4E4E4;
+    text-align: center;
+}
+.speak .box .square .img img {
+    margin-top: 50px;
+}
+/* 第一行字 */
+.speak .box .square .title1 {
+    display: block;
+    margin: 20px 0px 0px 20px;
+    font-size: 14px;
+}
+/* 第二行字 */
+.speak .box .square .title2 {
+    display: block;
+    font-size: 14px;
+    margin: 5px 0px 0px 20px;
+    font-size-adjust: 14px;
+}
+/* 价格 */
+.speak .box .square .price {
+    color: #F2424C;
+    font-size: 14px;
+    margin-top: -20px;
+    margin-left: 297px;
+}
+/* 文字 */
+.speak .box .square .base {
+    font-size: 12px;
+    margin: 15px 0px 0px 20px;
+    color: #999999;
+}
+/* footer top */
+.top {
+    width: 1200px;
+    height: 244px;
+    margin: 0 auto;
+    border: 1px solid #EDEDED;
+    margin-top: 50px;
+    color: #989898;
+    text-align: center;
+}
+.top .square {
+    width: 300px;
+    height: 100%;
+    border-right: 1px solid #EDEDED;
+
+    float: left;
+    box-sizing: border-box;
+}
+/* 客户服务 */
+.top .square .title1 {
+    margin-top: 50px;
+}
+.top .square .title2 {
+    width: 100%;
+    height: 84px;
+    /* border-right: 1px solid #EDEDED; */
+    margin-top: 26px;
+}
+.top .square .title2 div {
+    width: 80px;
+    height: 80px;
+    border: 1px solid #EDEDED;
+    float: left;
+    font-size: 12px;
+    text-align: center;
+    margin-left: 66px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+/* 关注我们 */
+.top .square .title2 div:last-child {
+    margin-left: 10px;
+}
+/* hover出现图片 */
+/* .top .square .title2 div:last-child img:nth-child(2):hover {
+    background-color: #1ABC9C;
+} */
+/* 下载APP */
+.top .square .title2 .download {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #EDEDED;
+    margin: -8px 0px 0px 25px;
+}
+.top .square .title2 .download img {
+    width: 80px;
+    height: 80px;
+    margin: 0px;
+}
+/* 扫描查看 */
+.top .square .title2 .scan {
+    display: block;
+    font-size: 12px;
+    margin: 12px 50px 15px 154px;
+    text-align: left;
+}
+.top .square .title2 button {
+    display: block;
+    width: 90px;
+    height: 30px;
+    font-size: 12px;
+    border: 1px solid #EDEDED;
+    background-color: #fff;
+    margin: -9px 0px 0px 154px;
+    color: #989898;
+}
+/* 服务热线 */
+.top .square .title2 .tel {
+    font-weight: bold;
+    font-size: 18px;
+    color: #696969;
+}
+.top .square .title2 .week,.money {
+    font-size: 14px;
+}
+/* 版权 */
+.bottom {
+    width: 100%;
+    height: 300px;
+    background-color: #333333;
+}
+.bottom .promise {
+    width: 100%;
+    height: 150px;
+    border-bottom: 1px solid #434343;
+    color: #fff;
+    font-size: 24px;
+}
+.bottom .promise .img1 {
+  position: relative;
+  left: 126px;
+  top: 16px;
+}
+.bottom .promise .img2 {
+    position: relative;
+    left: 420px;
+    top: 16px;
+}
+.bottom .promise .img3 {
+    position: relative;
+    left: 684px;
+    top: 16px;
+}
+.bottom .about {
+    color: #999;
+    font-size: 13px;
+    text-align: center;
+    padding: 30px 0px 0px 0px;
+}
+.bottom .about p:last-child {
+    margin-top: 25px;
+}
+/* 侧边栏 */
+aside {
+    width: 80px;
+    height: 80px;
+    background-color: #fff;
+    font-size: 12px;
+    color: #999;
+    padding: 10px;
+    box-sizing: border-box;
+    position: fixed;
+    right: 10px;
+    text-align: center;
+}
+aside .back {
+    bottom: 190px;
+}
+aside .APP {
+    bottom: 100px;
+}
+aside .service {
+    bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
 
 
 
